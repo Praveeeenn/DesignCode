@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State var show: Bool = false
+    @State var viewState: CGSize = CGSize.zero
+    
     var body: some View {
         ZStack {
             TitleView()
@@ -20,6 +22,7 @@ struct ContentView: View {
                 .cornerRadius(20.0)
                 .shadow(radius: 20.0)
                 .offset(x: 0, y: show ? -400 : -40)
+                .offset(viewState)
                 .scaleEffect(0.9)
                 .rotationEffect(Angle(degrees: show ? 0 : 10.0))
                 .rotation3DEffect(Angle(degrees: 5.0), axis: (x: 10.0, y: 0.0, z: 0.0))
@@ -30,16 +33,29 @@ struct ContentView: View {
                 .cornerRadius(20.0)
                 .shadow(radius: 20.0)
                 .offset(x: 0, y: show ? -200 : -20)
+                .offset(viewState)
                 .scaleEffect(0.95)
                 .rotationEffect(Angle(degrees: show ? 0 : 5.0))
                 .rotation3DEffect(Angle(degrees: 5.0), axis: (x: 10.0, y: 0.0, z: 0.0))
                 .blendMode(.hardLight)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
             CardView()
+                .offset(viewState)
                 .blendMode(.hardLight)
+                .animation(.spring(response: 0.3, dampingFraction: 0.6, blendDuration: 0))
                 .onTapGesture {
                     self.show.toggle()
             }
+            .gesture(
+                DragGesture().onChanged({ (value) in
+                    self.viewState = value.translation
+                    self.show = true
+                    }
+                ).onEnded({ (value) in
+                    self.viewState = .zero
+                    self.show = false
+                })
+            )
             BottomCardView()
                 .blur(radius: show ? 20 : 0)
                 .animation(.default)
