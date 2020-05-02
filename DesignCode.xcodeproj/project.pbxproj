@@ -13,6 +13,7 @@
 		ACC64F60245C8750000C410A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC64F5F245C8750000C410A /* Assets.xcassets */; };
 		ACC64F63245C8750000C410A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC64F62245C8750000C410A /* Preview Assets.xcassets */; };
 		ACC64F66245C8750000C410A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC64F64245C8750000C410A /* LaunchScreen.storyboard */; };
+		ACC64F6E245D5683000C410A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F6D245D5683000C410A /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ACC64F62245C8750000C410A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACC64F65245C8750000C410A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACC64F67245C8750000C410A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACC64F6D245D5683000C410A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				ACC64F59245C874E000C410A /* AppDelegate.swift */,
 				ACC64F5B245C874E000C410A /* SceneDelegate.swift */,
 				ACC64F5D245C874E000C410A /* ContentView.swift */,
+				ACC64F6D245D5683000C410A /* MenuView.swift */,
 				ACC64F5F245C8750000C410A /* Assets.xcassets */,
 				ACC64F64245C8750000C410A /* LaunchScreen.storyboard */,
 				ACC64F67245C8750000C410A /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC64F5A245C874E000C410A /* AppDelegate.swift in Sources */,
+				ACC64F6E245D5683000C410A /* MenuView.swift in Sources */,
 				ACC64F5C245C874E000C410A /* SceneDelegate.swift in Sources */,
 				ACC64F5E245C874E000C410A /* ContentView.swift in Sources */,
 			);
