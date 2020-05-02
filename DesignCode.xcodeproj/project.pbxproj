@@ -15,6 +15,7 @@
 		ACC64F66245C8750000C410A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC64F64245C8750000C410A /* LaunchScreen.storyboard */; };
 		ACC64F6E245D5683000C410A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F6D245D5683000C410A /* MenuView.swift */; };
 		ACC64F70245D7BE3000C410A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F6F245D7BE3000C410A /* Home.swift */; };
+		ACC64F72245D9017000C410A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F71245D9017000C410A /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ACC64F67245C8750000C410A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC64F6D245D5683000C410A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		ACC64F6F245D7BE3000C410A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		ACC64F71245D9017000C410A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				ACC64F5D245C874E000C410A /* ContentView.swift */,
 				ACC64F6D245D5683000C410A /* MenuView.swift */,
 				ACC64F6F245D7BE3000C410A /* Home.swift */,
+				ACC64F71245D9017000C410A /* HomeView.swift */,
 				ACC64F5F245C8750000C410A /* Assets.xcassets */,
 				ACC64F64245C8750000C410A /* LaunchScreen.storyboard */,
 				ACC64F67245C8750000C410A /* Info.plist */,
@@ -155,6 +158,7 @@
 				ACC64F5A245C874E000C410A /* AppDelegate.swift in Sources */,
 				ACC64F6E245D5683000C410A /* MenuView.swift in Sources */,
 				ACC64F70245D7BE3000C410A /* Home.swift in Sources */,
+				ACC64F72245D9017000C410A /* HomeView.swift in Sources */,
 				ACC64F5C245C874E000C410A /* SceneDelegate.swift in Sources */,
 				ACC64F5E245C874E000C410A /* ContentView.swift in Sources */,
 			);
