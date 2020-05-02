@@ -8,6 +8,10 @@
 
 import UIKit
 
+let screen = UIScreen.main.bounds
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
