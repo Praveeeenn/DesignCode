@@ -18,6 +18,7 @@
 		ACC64F72245D9017000C410A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F71245D9017000C410A /* HomeView.swift */; };
 		ACC64F74245DDD9C000C410A /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F73245DDD9C000C410A /* UpdateList.swift */; };
 		ACC64F76245DE2BB000C410A /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F75245DE2BB000C410A /* UpdateDetail.swift */; };
+		ACC64F78245DE620000C410A /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F77245DE620000C410A /* UpdateStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		ACC64F71245D9017000C410A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		ACC64F73245DDD9C000C410A /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		ACC64F75245DE2BB000C410A /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
+		ACC64F77245DE620000C410A /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				ACC64F6D245D5683000C410A /* MenuView.swift */,
 				ACC64F73245DDD9C000C410A /* UpdateList.swift */,
 				ACC64F75245DE2BB000C410A /* UpdateDetail.swift */,
+				ACC64F77245DE620000C410A /* UpdateStore.swift */,
 				ACC64F6F245D7BE3000C410A /* Home.swift */,
 				ACC64F71245D9017000C410A /* HomeView.swift */,
 				ACC64F5F245C8750000C410A /* Assets.xcassets */,
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC64F5A245C874E000C410A /* AppDelegate.swift in Sources */,
+				ACC64F78245DE620000C410A /* UpdateStore.swift in Sources */,
 				ACC64F74245DDD9C000C410A /* UpdateList.swift in Sources */,
 				ACC64F6E245D5683000C410A /* MenuView.swift in Sources */,
 				ACC64F76245DE2BB000C410A /* UpdateDetail.swift in Sources */,
