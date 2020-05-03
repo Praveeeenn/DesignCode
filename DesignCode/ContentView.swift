@@ -78,7 +78,7 @@ struct ContentView: View {
                 })
             )
             //Text("\(bottomState.height)").offset(y: -300)
-            BottomCardView()
+            BottomCardView(showRing: $showCard)
                 .offset(x: 0, y: showCard ? 360 : 1000)
                 .offset(y: bottomState.height)
                 .blur(radius: show ? 20 : 0)
@@ -167,6 +167,7 @@ struct TitleView: View {
 }
 
 struct BottomCardView: View {
+    @Binding var showRing: Bool
     var body: some View {
         VStack(spacing: 20) {
             Rectangle()
@@ -177,6 +178,24 @@ struct BottomCardView: View {
                 .multilineTextAlignment(.center)
                 .font(.subheadline)
                 .lineSpacing(4)
+            HStack {
+                RingView(color1: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), color2: #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1), widthAndHeight: 88.0, percent: 75, show: $showRing)
+                    .animation(Animation.easeInOut.delay(0.3))
+                Spacer()
+                VStack {
+                    Text("SwiftUI")
+                        .fontWeight(.bold)
+                    Text("12 of 12 Sections completed\n10 Hours spent so far.")
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                        .lineSpacing(4.0)
+                }
+            .padding()
+                .background(Color.white)
+            .cornerRadius(20)
+                .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 10)
+            }
+            .padding()
             Spacer()
         }
         .padding(.top, 8)

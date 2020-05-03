@@ -11,8 +11,9 @@ import SwiftUI
 struct RingView: View {
     var color1 = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
     var color2 = #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)
-    var widthAndHeight: CGFloat = 288.0
-    var percent: CGFloat = 44.0
+    var widthAndHeight: CGFloat = 108.0
+    var percent: CGFloat = 74.0
+    @Binding var show: Bool
     
     var body: some View {
         let multiplier = widthAndHeight / 44
@@ -22,7 +23,7 @@ struct RingView: View {
                 .stroke(Color.black.opacity(0.1), style: StrokeStyle(lineWidth: 5.0 * multiplier))
                 .frame(width: widthAndHeight, height: widthAndHeight)
             Circle()
-                .trim(from: progress, to: 1.0)
+                .trim(from: show ? progress: 1, to: 1.0)
                 .stroke(
                     LinearGradient(gradient: Gradient(colors: [Color(color1), Color(color2)]), startPoint: .topTrailing, endPoint: .bottomLeading),
                     style: StrokeStyle(lineWidth: 5.0 * multiplier, lineCap: .round, lineJoin: .round, miterLimit: .infinity, dash: [20, 0], dashPhase: 0))
@@ -33,12 +34,15 @@ struct RingView: View {
             Text("\(Int(percent))%")
                 .font(.system(size: 14 * multiplier))
                 .fontWeight(.bold)
+                .onTapGesture {
+                    self.show.toggle()
+            }
         }
     }
 }
 
 struct RingView_Previews: PreviewProvider {
     static var previews: some View {
-        RingView()
+        RingView(show: .constant(true))
     }
 }
