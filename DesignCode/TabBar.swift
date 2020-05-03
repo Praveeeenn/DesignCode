@@ -15,11 +15,14 @@ struct TabBar: View {
                 Image(systemName: "play.circle.fill")
                 Text("Home")
             }
+            CourseList().tabItem {
+                Image(systemName: "function")
+                Text("Courses")
+            }
             ContentView().tabItem {
                 Image(systemName: "rectangle.stack.fill")
                 Text("Certificates")
             }
-            
         }
 
     }

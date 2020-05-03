@@ -18,7 +18,7 @@ struct CourseList: View {
             Color.black.opacity(Double(activeView.height / 500))
                 .animation(.linear)
                 .edgesIgnoringSafeArea(.all)
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(spacing: 30.0) {
                     Text("Courses")
                         .font(.largeTitle).bold()
@@ -151,9 +151,9 @@ struct CourseView: View {
             }
             
             if show {
-//                CourseDetail(course: course, show: $show, active: $active, activeIndex: $activeIndex)
-//                    .background(Color.white)
-//                .animation(nil)
+                CourseDetail(course: course, show: $show, active: $active, activeIndex: $activeIndex)
+                    .background(Color.white)
+                .animation(nil)
             }
             
         }
