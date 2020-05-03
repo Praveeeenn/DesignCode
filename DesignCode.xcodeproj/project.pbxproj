@@ -20,6 +20,7 @@
 		ACC64F76245DE2BB000C410A /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F75245DE2BB000C410A /* UpdateDetail.swift */; };
 		ACC64F78245DE620000C410A /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F77245DE620000C410A /* UpdateStore.swift */; };
 		ACC64F7A245E3FA4000C410A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F79245E3FA4000C410A /* TabBar.swift */; };
+		ACD3F010245EB4AA000FABBD /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3F00F245EB4AA000FABBD /* RingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		ACC64F75245DE2BB000C410A /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
 		ACC64F77245DE620000C410A /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
 		ACC64F79245E3FA4000C410A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		ACD3F00F245EB4AA000FABBD /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				ACC64F77245DE620000C410A /* UpdateStore.swift */,
 				ACC64F6F245D7BE3000C410A /* Home.swift */,
 				ACC64F71245D9017000C410A /* HomeView.swift */,
+				ACD3F00F245EB4AA000FABBD /* RingView.swift */,
 				ACC64F5F245C8750000C410A /* Assets.xcassets */,
 				ACC64F64245C8750000C410A /* LaunchScreen.storyboard */,
 				ACC64F67245C8750000C410A /* Info.plist */,
@@ -172,6 +175,7 @@
 				ACC64F74245DDD9C000C410A /* UpdateList.swift in Sources */,
 				ACC64F6E245D5683000C410A /* MenuView.swift in Sources */,
 				ACC64F76245DE2BB000C410A /* UpdateDetail.swift in Sources */,
+				ACD3F010245EB4AA000FABBD /* RingView.swift in Sources */,
 				ACC64F70245D7BE3000C410A /* Home.swift in Sources */,
 				ACC64F72245D9017000C410A /* HomeView.swift in Sources */,
 				ACC64F5C245C874E000C410A /* SceneDelegate.swift in Sources */,
