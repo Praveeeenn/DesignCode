@@ -45,6 +45,7 @@
 		ACC64F7A245E3FA4000C410A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC64F79245E3FA4000C410A /* TabBar.swift */; };
 		ACD3F010245EB4AA000FABBD /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3F00F245EB4AA000FABBD /* RingView.swift */; };
 		ACD3F012245F21DF000FABBD /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3F011245F21DF000FABBD /* Modifiers.swift */; };
+		ACD5EFDB245F65DE00330091 /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD5EFDA245F65DE00330091 /* CourseDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		ACC64F79245E3FA4000C410A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		ACD3F00F245EB4AA000FABBD /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		ACD3F011245F21DF000FABBD /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		ACD5EFDA245F65DE00330091 /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				ACC64F5D245C874E000C410A /* ContentView.swift */,
 				ACD3F011245F21DF000FABBD /* Modifiers.swift */,
 				AC99DBD2245F38CB00419251 /* CourseList.swift */,
+				ACD5EFDA245F65DE00330091 /* CourseDetail.swift */,
 				ACC64F6D245D5683000C410A /* MenuView.swift */,
 				ACC64F73245DDD9C000C410A /* UpdateList.swift */,
 				ACC64F79245E3FA4000C410A /* TabBar.swift */,
@@ -291,6 +294,7 @@
 				ACC64F72245D9017000C410A /* HomeView.swift in Sources */,
 				ACC64F5C245C874E000C410A /* SceneDelegate.swift in Sources */,
 				ACC64F5E245C874E000C410A /* ContentView.swift in Sources */,
+				ACD5EFDB245F65DE00330091 /* CourseDetail.swift in Sources */,
 				ACC64F7A245E3FA4000C410A /* TabBar.swift in Sources */,
 				AC99DBD3245F38CB00419251 /* CourseList.swift in Sources */,
 			);
