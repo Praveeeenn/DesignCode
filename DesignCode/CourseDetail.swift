@@ -14,7 +14,7 @@ struct CourseDetail: View {
     @Binding var active: Bool
     @Binding var activeIndex: Int
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             VStack {
                 VStack {
                     HStack(alignment: .top) {
@@ -63,6 +63,7 @@ struct CourseDetail: View {
                                Text("Minimul codinf experience required, It was written for designers and developers who are passionate about collaborating and building real apps for iOS and macOS. While it's not one codebase for all apps.")
                            }
                            .padding(30)
+                .padding(.bottom, 40)
             }
         }
         .edgesIgnoringSafeArea(.all)
