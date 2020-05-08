@@ -67,6 +67,7 @@ struct CourseDetail: View {
                 .padding(.bottom, 40)
             }
         }
+            .background(Color("background2"))
         .edgesIgnoringSafeArea(.all)
     }
 }
