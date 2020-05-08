@@ -31,15 +31,17 @@ class CourseStore: ObservableObject {
     @Published var courses: [Course] = courseData
     
     init() {
+        let colorArray = [#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1), #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), #colorLiteral(red: 0.3098039329, green: 0.01568627544, blue: 0.1294117719, alpha: 1), #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1), #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1),]
         getArray(id: "course") { (items) in
             items.forEach { (item) in
                 self.courses.append(
                     Course(
                     title: item.fields["title"] as! String,
                     subtitle: item.fields["subtitle"] as! String,
-                    image: #imageLiteral(resourceName: "Background1"),
+                    image: (item.fields.linkedAsset(at: "image")?.url) ?? URL(string: "")!
+                        ,
                     logo: #imageLiteral(resourceName: "Logo3"),
-                    color: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1),
+                    color: colorArray.randomElement()!,
                     show: false)
                 )
             }
