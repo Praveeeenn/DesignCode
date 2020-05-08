@@ -18,6 +18,9 @@ struct CourseList: View {
             Color.black.opacity(Double(activeView.height / 500))
                 .animation(.linear)
                 .edgesIgnoringSafeArea(.all)
+                .onAppear {
+                    getArray()
+            }
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 30.0) {
                     Text("Courses")
@@ -198,8 +201,8 @@ struct Course: Identifiable {
 }
 
 let courseData = [
-    Course(title: "Prototype Design in SwiftU", subtitle: "18 Sections", image: #imageLiteral(resourceName: "Card6"), logo: #imageLiteral(resourceName: "Logo1"), color: #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1), show: false),
-    Course(title: "Apps Design in SwiftU", subtitle: "20 Sections", image: #imageLiteral(resourceName: "Background1"), logo: #imageLiteral(resourceName: "Logo3"), color: #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1), show: false),
+    Course(title: "Prototype Design in SwiftUI", subtitle: "18 Sections", image: #imageLiteral(resourceName: "Card6"), logo: #imageLiteral(resourceName: "Logo1"), color: #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1), show: false),
+    Course(title: "Apps Design in SwiftUI", subtitle: "20 Sections", image: #imageLiteral(resourceName: "Background1"), logo: #imageLiteral(resourceName: "Logo3"), color: #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1), show: false),
     Course(title: "Advacned iOS with objc", subtitle: "30 Sections", image: #imageLiteral(resourceName: "Card2"), logo: #imageLiteral(resourceName: "Logo2"), color: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), show: false),
-    Course(title: "MacOS Design in SwiftU", subtitle: "5 Sections", image: #imageLiteral(resourceName: "Card1"), logo: #imageLiteral(resourceName: "Logo1"), color: #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1), show: false)
+    Course(title: "MacOS Design in SwiftUI", subtitle: "5 Sections", image: #imageLiteral(resourceName: "Card1"), logo: #imageLiteral(resourceName: "Logo1"), color: #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1), show: false)
 ]

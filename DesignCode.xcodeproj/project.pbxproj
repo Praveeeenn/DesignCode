@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AC5F86FC2465D8A300CC1F52 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F86FB2465D8A300CC1F52 /* Data.swift */; };
 		AC5F86FE2465DA5D00CC1F52 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F86FD2465DA5D00CC1F52 /* PostList.swift */; };
 		AC5F87002465DDC200CC1F52 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F86FF2465DDC200CC1F52 /* DataStore.swift */; };
+		AC5F87032465E37200CC1F52 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = AC5F87022465E37200CC1F52 /* Contentful */; };
+		AC5F87052465EAC700CC1F52 /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F87042465EAC700CC1F52 /* CourseStore.swift */; };
 		AC99DBBC245F25C600419251 /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC99DBA5245F25C600419251 /* WorkSans-VariableFont_wght.ttf */; };
 		AC99DBBD245F25C600419251 /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC99DBA7245F25C600419251 /* WorkSans-Regular.ttf */; };
 		AC99DBBE245F25C600419251 /* WorkSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC99DBA8245F25C600419251 /* WorkSans-Light.ttf */; };
@@ -55,6 +57,7 @@
 		AC5F86FB2465D8A300CC1F52 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		AC5F86FD2465DA5D00CC1F52 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		AC5F86FF2465DDC200CC1F52 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		AC5F87042465EAC700CC1F52 /* CourseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStore.swift; sourceTree = "<group>"; };
 		AC99DBA5245F25C600419251 /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		AC99DBA7245F25C600419251 /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
 		AC99DBA8245F25C600419251 /* WorkSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Light.ttf"; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5F87032465E37200CC1F52 /* Contentful in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +185,7 @@
 				ACD3F00F245EB4AA000FABBD /* RingView.swift */,
 				AC5F86FB2465D8A300CC1F52 /* Data.swift */,
 				AC5F86FF2465DDC200CC1F52 /* DataStore.swift */,
+				AC5F87042465EAC700CC1F52 /* CourseStore.swift */,
 				AC5F86FD2465DA5D00CC1F52 /* PostList.swift */,
 				AC99DBA4245F25C600419251 /* Work_Sans */,
 				ACC64F5F245C8750000C410A /* Assets.xcassets */,
@@ -215,6 +220,9 @@
 			dependencies = (
 			);
 			name = DesignCode;
+			packageProductDependencies = (
+				AC5F87022465E37200CC1F52 /* Contentful */,
+			);
 			productName = DesignCode;
 			productReference = ACC64F56245C874E000C410A /* DesignCode.app */;
 			productType = "com.apple.product-type.application";
@@ -243,6 +251,9 @@
 				Base,
 			);
 			mainGroup = ACC64F4D245C874E000C410A;
+			packageReferences = (
+				AC5F87012465E37200CC1F52 /* XCRemoteSwiftPackageReference "contentful.swift" */,
+			);
 			productRefGroup = ACC64F57245C874E000C410A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5F87052465EAC700CC1F52 /* CourseStore.swift in Sources */,
 				ACC64F5A245C874E000C410A /* AppDelegate.swift in Sources */,
 				AC5F86FC2465D8A300CC1F52 /* Data.swift in Sources */,
 				AC5F87002465DDC200CC1F52 /* DataStore.swift in Sources */,
@@ -504,6 +516,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC5F87012465E37200CC1F52 /* XCRemoteSwiftPackageReference "contentful.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/contentful/contentful.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC5F87022465E37200CC1F52 /* Contentful */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5F87012465E37200CC1F52 /* XCRemoteSwiftPackageReference "contentful.swift" */;
+			productName = Contentful;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACC64F4E245C874E000C410A /* Project object */;
 }
