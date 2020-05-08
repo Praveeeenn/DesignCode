@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC5F86FC2465D8A300CC1F52 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F86FB2465D8A300CC1F52 /* Data.swift */; };
+		AC5F86FE2465DA5D00CC1F52 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F86FD2465DA5D00CC1F52 /* PostList.swift */; };
 		AC99DBBC245F25C600419251 /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC99DBA5245F25C600419251 /* WorkSans-VariableFont_wght.ttf */; };
 		AC99DBBD245F25C600419251 /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC99DBA7245F25C600419251 /* WorkSans-Regular.ttf */; };
 		AC99DBBE245F25C600419251 /* WorkSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC99DBA8245F25C600419251 /* WorkSans-Light.ttf */; };
@@ -49,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC5F86FB2465D8A300CC1F52 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		AC5F86FD2465DA5D00CC1F52 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		AC99DBA5245F25C600419251 /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		AC99DBA7245F25C600419251 /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
 		AC99DBA8245F25C600419251 /* WorkSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Light.ttf"; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				ACC64F6F245D7BE3000C410A /* Home.swift */,
 				ACC64F71245D9017000C410A /* HomeView.swift */,
 				ACD3F00F245EB4AA000FABBD /* RingView.swift */,
+				AC5F86FB2465D8A300CC1F52 /* Data.swift */,
+				AC5F86FD2465DA5D00CC1F52 /* PostList.swift */,
 				AC99DBA4245F25C600419251 /* Work_Sans */,
 				ACC64F5F245C8750000C410A /* Assets.xcassets */,
 				ACC64F64245C8750000C410A /* LaunchScreen.storyboard */,
@@ -284,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACC64F5A245C874E000C410A /* AppDelegate.swift in Sources */,
+				AC5F86FC2465D8A300CC1F52 /* Data.swift in Sources */,
 				ACC64F78245DE620000C410A /* UpdateStore.swift in Sources */,
 				ACC64F74245DDD9C000C410A /* UpdateList.swift in Sources */,
 				ACC64F6E245D5683000C410A /* MenuView.swift in Sources */,
@@ -293,6 +300,7 @@
 				ACC64F70245D7BE3000C410A /* Home.swift in Sources */,
 				ACC64F72245D9017000C410A /* HomeView.swift in Sources */,
 				ACC64F5C245C874E000C410A /* SceneDelegate.swift in Sources */,
+				AC5F86FE2465DA5D00CC1F52 /* PostList.swift in Sources */,
 				ACC64F5E245C874E000C410A /* ContentView.swift in Sources */,
 				ACD5EFDB245F65DE00330091 /* CourseDetail.swift in Sources */,
 				ACC64F7A245E3FA4000C410A /* TabBar.swift in Sources */,
