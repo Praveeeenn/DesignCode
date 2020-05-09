@@ -8,6 +8,14 @@
 
 import SwiftUI
 
+func hapticFeedback(type: UINotificationFeedbackGenerator.FeedbackType) {
+    UINotificationFeedbackGenerator().notificationOccurred(type)
+}
+
+func impact(style: UIImpactFeedbackGenerator.FeedbackStyle) {
+    UIImpactFeedbackGenerator(style: style).impactOccurred()
+}
+
 struct Buttons: View {
     var body: some View {
         VStack(spacing: 50.0) {
@@ -74,11 +82,13 @@ struct RectangelButton: View {
             .gesture(
                 LongPressGesture(minimumDuration: 0.1, maximumDistance: 1).onChanged({ (value) in
                     self.tap = true
+                    impact(style: .heavy)
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                         self.tap = false
                     }
                 }).onEnded({ (value) in
                     self.press.toggle()
+                    hapticFeedback(type: .success)
                 })
         )
     }
