@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2437DE2466D15800522574 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2437DD2466D15800522574 /* Buttons.swift */; };
 		AC5F86FC2465D8A300CC1F52 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F86FB2465D8A300CC1F52 /* Data.swift */; };
 		AC5F86FE2465DA5D00CC1F52 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F86FD2465DA5D00CC1F52 /* PostList.swift */; };
 		AC5F87002465DDC200CC1F52 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F86FF2465DDC200CC1F52 /* DataStore.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC2437DD2466D15800522574 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		AC5F86FB2465D8A300CC1F52 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		AC5F86FD2465DA5D00CC1F52 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		AC5F86FF2465DDC200CC1F52 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				AC5F86FF2465DDC200CC1F52 /* DataStore.swift */,
 				AC5F87042465EAC700CC1F52 /* CourseStore.swift */,
 				AC7595D9246606B300528DC3 /* BlurView.swift */,
+				AC2437DD2466D15800522574 /* Buttons.swift */,
 				AC5F86FD2465DA5D00CC1F52 /* PostList.swift */,
 				AC99DBA4245F25C600419251 /* Work_Sans */,
 				ACC64F5F245C8750000C410A /* Assets.xcassets */,
@@ -325,6 +328,7 @@
 				ACC64F5C245C874E000C410A /* SceneDelegate.swift in Sources */,
 				AC5F86FE2465DA5D00CC1F52 /* PostList.swift in Sources */,
 				ACC64F5E245C874E000C410A /* ContentView.swift in Sources */,
+				AC2437DE2466D15800522574 /* Buttons.swift in Sources */,
 				ACD5EFDB245F65DE00330091 /* CourseDetail.swift in Sources */,
 				AC7595DA246606B300528DC3 /* BlurView.swift in Sources */,
 				ACC64F7A245E3FA4000C410A /* TabBar.swift in Sources */,
