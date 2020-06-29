@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-
 func hapticFeedback(type: UINotificationFeedbackGenerator.FeedbackType) {
     UINotificationFeedbackGenerator().notificationOccurred(type)
 }
